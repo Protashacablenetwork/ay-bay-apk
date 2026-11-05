@@ -1,0 +1,18 @@
+{
+  "sheetUrl": "",
+  "sheetId": "",
+  "inventorySheetUrl": "",
+  "inventorySheetName": "মালামাল_ও_ইকুইপমেন্ট_স্টক",
+  "monthSheetLinks": [],
+  "inventoryMonthSheetLinks": [],
+  "autoSync": true,
+  "lastSyncTime": null,
+  "syncStatus": "idle",
+  "syncMessage": "কোনো গুগল শিট লিংক সংযুক্ত নেই",
+  "companyName": "স্মার্ট ব্যবস্থাপনা",
+  "currencySymbol": "৳",
+  "activeMonth": "2026-10",
+  "managedMonths": [
+    "2026-10"
+  ]
+}

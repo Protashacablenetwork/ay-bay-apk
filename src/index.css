@@ -1,0 +1,258 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Hind Siliguri', 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* =========================================================
+   Dark Mode High-Contrast Theme Styles
+   ========================================================= */
+html.dark {
+  color-scheme: dark;
+}
+
+html.dark body {
+  background-color: #09090b !important; /* Pure Dark Zinc / Black */
+  color: #f4f4f5 !important;
+}
+
+/* Force dark backgrounds for containers, panels, cards, drawers & modals */
+html.dark .bg-white,
+html.dark .bg-slate-50,
+html.dark .bg-gray-50,
+html.dark .bg-zinc-50,
+html.dark [class*="bg-white/"],
+html.dark [class*="bg-slate-50/"] {
+  background-color: #121215 !important;
+  color: #f4f4f5 !important;
+}
+
+html.dark [class*="via-slate-50"],
+html.dark [class*="from-slate-50"],
+html.dark [class*="to-slate-50"],
+html.dark [class*="from-indigo-50"],
+html.dark [class*="to-teal-50"] {
+  --tw-gradient-via-stops: transparent !important;
+  --tw-gradient-from: #18181b !important;
+  --tw-gradient-to: #121215 !important;
+  background-color: #18181b !important;
+}
+
+/* Side Drawer and Navigation Bars in Dark Mode */
+html.dark aside[role="dialog"],
+html.dark aside[role="dialog"] > div,
+html.dark nav {
+  background-color: #121215 !important;
+  border-color: #27272a !important;
+  color: #f4f4f5 !important;
+}
+
+html.dark .bg-slate-100,
+html.dark .bg-gray-100,
+html.dark .bg-zinc-100,
+html.dark [class*="bg-slate-100/"] {
+  background-color: #18181b !important;
+  color: #f4f4f5 !important;
+}
+
+html.dark .bg-slate-200,
+html.dark .bg-gray-200 {
+  background-color: #27272a !important;
+  color: #ffffff !important;
+}
+
+/* Force high-contrast readable text for dark mode */
+html.dark .text-slate-900,
+html.dark .text-slate-800,
+html.dark .text-slate-700,
+html.dark .text-gray-900,
+html.dark .text-gray-800,
+html.dark .text-gray-700,
+html.dark .text-black {
+  color: #f4f4f5 !important;
+}
+
+html.dark .text-slate-600,
+html.dark .text-slate-500,
+html.dark .text-gray-600,
+html.dark .text-gray-500 {
+  color: #d4d4d8 !important;
+}
+
+html.dark .text-slate-400,
+html.dark .text-gray-400 {
+  color: #a1a1aa !important;
+}
+
+/* Ensure inputs, selects, textareas, options are dark & readable white text */
+html.dark input,
+html.dark select,
+html.dark textarea {
+  background-color: #18181b !important;
+  color: #ffffff !important;
+  border-color: #3f3f46 !important;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+  color: #71717a !important;
+}
+
+html.dark option {
+  background-color: #18181b !important;
+  color: #ffffff !important;
+}
+
+/* Table elements in dark mode */
+html.dark table {
+  color: #f4f4f5 !important;
+}
+
+html.dark th,
+html.dark td {
+  border-color: #27272a !important;
+  color: #f4f4f5 !important;
+}
+
+html.dark th {
+  background-color: #18181b !important;
+  color: #d4d4d8 !important;
+}
+
+/* Borders in dark mode */
+html.dark .border-slate-200,
+html.dark .border-slate-100,
+html.dark .border-slate-300,
+html.dark .border-gray-200,
+html.dark .border-gray-100,
+html.dark .border-gray-300 {
+  border-color: #27272a !important;
+}
+
+/* Dark mode stat cards: Dark Monochromatic Cards with crisp white text & subtle borders */
+html.dark [id^="card-stat-"] {
+  background: #18181b !important;
+  border: 1px solid #27272a !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4) !important;
+  color: #ffffff !important;
+}
+
+html.dark [id^="card-stat-"] span,
+html.dark [id^="card-stat-"] div,
+html.dark [id^="card-stat-"] p,
+html.dark [id^="card-stat-"] h1,
+html.dark [id^="card-stat-"] h2,
+html.dark [id^="card-stat-"] h3 {
+  color: #ffffff !important;
+}
+
+html.dark [id^="card-stat-"] .border-t {
+  border-color: #27272a !important;
+}
+
+/* Dark mode Side Drawer & Mobile Bottom Nav */
+html.dark aside[role="dialog"] {
+  background-color: #09090b !important;
+  border-color: #27272a !important;
+  color: #f4f4f5 !important;
+}
+
+html.dark aside[role="dialog"] div,
+html.dark aside[role="dialog"] button,
+html.dark aside[role="dialog"] p,
+html.dark aside[role="dialog"] h3,
+html.dark aside[role="dialog"] h4,
+html.dark aside[role="dialog"] span {
+  border-color: #27272a !important;
+}
+
+/* Preserve bright colored accents/badges where appropriate */
+html.dark .text-emerald-600,
+html.dark .text-emerald-700,
+html.dark .text-emerald-800 {
+  color: #34d399 !important;
+}
+
+html.dark .text-rose-600,
+html.dark .text-rose-700,
+html.dark .text-rose-800 {
+  color: #fb7185 !important;
+}
+
+html.dark .text-indigo-600,
+html.dark .text-indigo-700,
+html.dark .text-indigo-800 {
+  color: #818cf8 !important;
+}
+
+html.dark .text-blue-600,
+html.dark .text-blue-700,
+html.dark .text-blue-800 {
+  color: #60a5fa !important;
+}
+
+html.dark .text-amber-600,
+html.dark .text-amber-700,
+html.dark .text-amber-800 {
+  color: #fbbf24 !important;
+}
+
+html.dark .bg-emerald-50,
+html.dark .bg-emerald-100 {
+  background-color: rgba(6, 78, 59, 0.4) !important;
+  color: #a7f3d0 !important;
+}
+
+html.dark .bg-rose-50,
+html.dark .bg-rose-100 {
+  background-color: rgba(136, 19, 55, 0.4) !important;
+  color: #fecdd3 !important;
+}
+
+html.dark .bg-indigo-50,
+html.dark .bg-indigo-100 {
+  background-color: rgba(49, 46, 129, 0.4) !important;
+  color: #c7d2fe !important;
+}
+
+html.dark .bg-amber-50,
+html.dark .bg-amber-100 {
+  background-color: rgba(120, 53, 15, 0.4) !important;
+  color: #fde68a !important;
+}
+
+html.dark .bg-blue-50,
+html.dark .bg-blue-100 {
+  background-color: rgba(30, 58, 138, 0.4) !important;
+  color: #bfdbfe !important;
+}
+
+@media print {
+  /* Hide interactive controls, header buttons, forms when printing */
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-page {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+}
+
+.print-only {
+  display: none;
+}
+
